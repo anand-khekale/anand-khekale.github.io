@@ -1,6 +1,6 @@
 # Anand Khekale
-# Senior Software Engineer IBM i 
-*RPGLE* *CLLE* *COBOL* *PYTHON*
+# Senior Software Engineer  
+Technologies: *IBM i,* *RPGLE,* *CLLE,* *COBOL,* *PYTHON
 
 Contact: anand.khekale@gmail.com
 
