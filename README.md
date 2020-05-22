@@ -6,4 +6,4 @@ Email: anand.khekale@gmail.com
 
 twitter: [@anandkhekale](https://twitter.com/anandkhekale)
 
-Linkedin: https://www.linkedin.com/in/anandkhekaleas400consultant/ 
+Linkedin:[Anand's LinkedIn Page](https://www.linkedin.com/in/anandkhekaleas400consultant/)  
