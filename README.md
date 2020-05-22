@@ -4,6 +4,6 @@ Technologies: *IBM i (formarly AS/100, iSeries),* *RPGLE,* *CLLE,* *COBOL,* *PYT
 
 Email: [anand.khekale@gmail.com](mailto:anand.khekale@gmail.com)
 
-twitter: [@anandkhekale](https://twitter.com/anandkhekale)
+Twitter: [@anandkhekale](https://twitter.com/anandkhekale)
 
-Linkedin:[Anand's LinkedIn Page](https://www.linkedin.com/in/anandkhekaleas400consultant/)  
+Linkedin: [Anand's LinkedIn Page](https://www.linkedin.com/in/anandkhekaleas400consultant/)  
