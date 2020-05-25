@@ -8,4 +8,4 @@ Twitter: [@anandkhekale](https://twitter.com/anandkhekale)
 
 Linkedin: [Anand's LinkedIn Page](https://www.linkedin.com/in/anandkhekaleas400consultant/)  
 
-CV : [Anand's CV](https://anand-khekale.github.io/Anand-Khekale-resume.pdf)
+CV : [Anand's CV](https://anand-khekale.github.io/Anand-Khekale-Resume.pdf)
