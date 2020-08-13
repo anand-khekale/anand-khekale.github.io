@@ -1,0 +1,152 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Anand Khekale
+description: > # this means to ignore newlines until "baseurl:"
+  Projects of programmer working on IBM i (AS/400, iSeries), using RPGLE, DB2, SQL, Python, NodeJS, JavaScript.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://anand-khekale.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+github_source: anand-khekale.github.io
+
+# Site Author
+author:
+  name             : "Anand Khekale"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "IBM i Programmer"
+  location         : "Pune, India."
+  email            : "anand.khekale@gmail.com"
+  uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/anand-khekale"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/anandkhekale"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/anandkhekaleas400consultant/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/anandkhekale"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/anand-khekale"
+
+    
+breadcrumbs: true 
+breadcrumb_home_label : "Home"
+breadcrumb_separator  : "/"
+
+permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title.html
+
+# Pagination settings
+paginate: 5                           # number of posts to show per page
+# paginate_path: "/page:num/"  # link scheme for articles, should be letf as is
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+# Used by Jekyll to recognize what is a post and what is a page
+defaults:
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: single
+      author_profile: true 
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+      share: true
+
+# Markdown parser settings
+markdown: kramdown
+highlighter: rouge
+
+timezone: America/Chicago
+
+# Build settings
+include:
+  - _pages                  # all your pages can be put inside pages (except articles)
+exclude:
+  - _drafts
+  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+github: [metadata]
+remote_theme: "mmistakes/minimal-mistakes@4.15.2"
+
+minimal_mistakes_skin: "air" #"dark", "air", "dirt"
+
+plugins:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-include-cache
+  - jemoji
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-175306064-1"
+    anonymize_ip: false # default
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
+
+social:
+  type: Person  # Person or Organization (defaults to Person)
+  name: Anand Khekale # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/anandkhekale"
+    - "https://www.linkedin.com/in/anandkhekaleas400consultant/"
