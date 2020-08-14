@@ -5,7 +5,7 @@ layout: single
 categories: ibmi jdbc rpgle free-format 
 tags: ibmi as/400 iseries
 ---
-Here I explain connecting PostgreSQL from IBM i using type 4 JDBC driver in a RPGLE program. 
+Here I explain connecting PostgreSQL database from IBM i using type 4 JDBC driver in a RPGLE program. 
 
 Recently, my client acquired an application which uses PostgreSQL database. The main application resides on IBM i. They wanted to get the data from PostgreSQL into IBM i. 
 
@@ -17,9 +17,12 @@ I started on the task, downloaded [Scott Klement's](https://www.scottklement.com
 Here are the steps I took, 
 
 1. Downloaded type 4 JDBC driver jar from [PostgreSQL](https://jdbc.postgresql.org) server, placed it in home folder in IFS. e.g. `/home/UserID/java/jdbc/POSTGRESQL-42.2.14.jar`
-2. Derived their Class.forName string `'org.postgresql.Driver'` from their [documentation](https://jdbc.postgresql.org/documentation/documentation.html).
-3. There are few `ENVVAR` which needs to be set:
+2. Derived their Class.forName string `'org.postgresql.Driver'` from their [documentation](https://jdbc.postgresql.org/documentation/documentation.html). This is needed when connecting to the database, see the source.
+3. There are few environment variables which needs to be set for Java to work from RPGLE. 
     * the environment variable - `CLASSPATH` for driver **.jar** file in *IFS*.
-    * setting `STDIN`, `STDOUT`, `STDERR` to catch Java exceptions, also call `CHECKSTDIO` program to set these open [*More details here*](https://www.ibm.com/developerworks/rational/cafe/docBodyAttachments/2681-102-2-7220/Troubleshooting_RPG_Calls_To_Java_v2.html).
-4. `RPGLE` to connect and fetch the data from that server. 
-5. Compiled and tested the connection. So *simple!*
+    * setting `STDIN`, `STDOUT`, `STDERR` to catch Java exceptions. Also, a call to `CHECKSTDIO` program to set these 3 open. [*more details here*](https://www.ibm.com/developerworks/rational/cafe/docBodyAttachments/2681-102-2-7220/Troubleshooting_RPG_Calls_To_Java_v2.html).
+4. `RPGLE` program source is [here](https://github.com/anand-khekale/PostgreSQL-IBMi). 
+5. With RPGLE, Java and correct JDBC driver, this works perfectly. 
+
+Thanks to the `JDBCR4` service program provided by Scott Klement, the development time has shortened considerably.
+Feel free to reach me on [Twitter](https://twitter.com/anandkhekale). 
