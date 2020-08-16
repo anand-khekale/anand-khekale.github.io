@@ -15,9 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 title: Anand Khekale
 description: > # this means to ignore newlines until "baseurl:"
-  Projects of programmer working on IBM i (AS/400, iSeries), using RPGLE, DB2, SQL, Python, NodeJS, JavaScript.
+  Over 20 years of experience designing and developing applications on IBM i (AS/400, iSeries) system. 
+  Hands on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc. Excellent knowledge of JavaScript, NodeJS, Python. 
+  Instrumental in writing web-services/RESTful APIs.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://anand-khekale.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.anandk.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_source: anand-khekale.github.io
 
@@ -28,19 +30,19 @@ author:
   bio              : "IBM i Programmer"
   location         : "Pune, India."
   email            : "anand.khekale@gmail.com"
-  uri              :
-  home             : # null (default), "absolute or relative url to link to author home"
+  uri              : "https://www.anandk.dev"
+  home             : "https://www.anandk.dev" # null (default), "absolute or relative url to link to author home"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anand-khekale"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/anandkhekale"
+      url: "https://twitter.com/anandkdev"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/anandkhekaleas400consultant/"
-
+      url: "https://www.linkedin.com/in/anandkdev"
+    
 footer:
   links:
     - label: "Twitter"
@@ -49,6 +51,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anand-khekale"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.anandk.dev"
 
     
 breadcrumbs: true 
@@ -142,11 +147,11 @@ analytics:
 compress_html:
   clippings: all
   ignore:
-    envs: development  # disable compression in dev environment
+    envs:   # disable compression in dev environment
 
 social:
   type: Person  # Person or Organization (defaults to Person)
   name: Anand Khekale # If the user or organization name differs from the site's name
   links:
-    - "https://twitter.com/anandkhekale"
-    - "https://www.linkedin.com/in/anandkhekaleas400consultant/"
+    - "https://twitter.com/anandkdev"
+    - "https://www.linkedin.com/in/anandkdev"

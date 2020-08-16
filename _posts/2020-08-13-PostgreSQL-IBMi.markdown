@@ -5,7 +5,7 @@ layout: single
 categories: ibmi jdbc rpgle free-format 
 tags: ibmi as/400 iseries
 ---
-Here I explain connecting PostgreSQL database from IBM i using type 4 JDBC driver in a RPGLE program. 
+Here I explain how to connect PostgreSQL database from IBM i using type 4 JDBC driver in a RPGLE program. 
 
 Recently, my client acquired an application which uses PostgreSQL database. The main application resides on IBM i. They wanted to get the data from PostgreSQL into IBM i. 
 
