@@ -1,6 +1,5 @@
 source "https://rubygems.org"
-gemspec
-#gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll"
 # gem "jackal" # TODO: Look in to using jackal theme, which is not a gem
 
 gem "jekyll", "~> 4.0"
