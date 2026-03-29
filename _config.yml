@@ -23,7 +23,7 @@ name                     : "Anand Khekale"
 description              : "Over 20 years of experience designing and developing applications on IBM i (AS/400, iSeries) system. 
   Hands-on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc. Excellent knowledge of JavaScript, NodeJS, Python. 
   Instrumental in writing web-services/RESTful APIs. Application modernization, application maintenance on IBM i (AS400, iSeries)"
-url                      : "https://www.anandk.dev"
+url                      : "https://anand-khekale.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : #"/assets/images/logo_main.png"
