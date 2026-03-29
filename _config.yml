@@ -1,33 +1,104 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Anand Khekale
-description: > # this means to ignore newlines until "baseurl:"
-  Over 20 years of experience designing and developing applications on IBM i (AS/400, iSeries) system. 
-  Hands on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc. Excellent knowledge of JavaScript, NodeJS, Python. 
-  Instrumental in writing web-services/RESTful APIs.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.anandk.dev" # the base hostname & protocol for your site, e.g. http://example.com
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-github_source: anand-khekale.github.io
+theme                  : "minimal-mistakes-jekyll"
+#remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "Anand's technical musings"
+title_separator          : "-"
+subtitle                 : A journey from AS/400 to IBM i and beyond... 
+name                     : "Anand Khekale"
+description              : "Over 20 years of experience designing and developing applications on IBM i (AS/400, iSeries) system. 
+  Hands-on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc. Excellent knowledge of JavaScript, NodeJS, Python. 
+  Instrumental in writing web-services/RESTful APIs. Application modernization, application maintenance on IBM i (AS400, iSeries)"
+url                      : "https://www.anandk.dev"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : #"/assets/images/logo_main.png"
+logo                     : "/assets/images/logo_main.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : "7eee32929866714de" # YOUR_SEARCH_ENGINE_ID
+  instant_search         : true # false (default), true
+# SEO Related
+google_site_verification : "v=spf1 include:spf.efwd.registrar-servers.com ~all"
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               : anandkdev
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : "/assets/images/logo.png" # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : Anand Khekale # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - "https://twitter.com/anandkdev"
+    - "https://www.linkedin.com/in/anandkdev"
+# Analytics
+analytics:
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "UA-175306064-1"
+    anonymize_ip         : # true, false (default)
+
 
 # Site Author
 author:
   name             : "Anand Khekale"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "IBM i Programmer"
+  bio              : "IBM i (AS/400) Consultant/Developer"
   location         : "Pune, India."
   email            : "anand.khekale@gmail.com"
   uri              : "https://www.anandk.dev"
@@ -42,12 +113,12 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/anandkdev"
-    
+# Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/anandkhekale"
+      url: "https://twitter.com/anandkdev"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anand-khekale"
@@ -55,31 +126,133 @@ footer:
       icon: "fas fa-fw fa-link"
       url: "https://www.anandk.dev"
 
-    
-breadcrumbs: true 
-breadcrumb_home_label : "Home"
-breadcrumb_separator  : "/"
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
 permalink: /:categories/:title/
-permalink: /:year/:month/:day/:title.html
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Pagination settings
-paginate: 5                           # number of posts to show per page
-# paginate_path: "/page:num/"  # link scheme for articles, should be letf as is
 
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
-# Used by Jekyll to recognize what is a post and what is a page
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
 defaults:
-  -
-    scope:
-      path: ''
-      type: pages
-    values:
-      layout: single
-      author_profile: true 
   # _posts
   - scope:
       path: ""
@@ -88,70 +261,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      related: true
+      comments: # true
       share: true
-
-# Markdown parser settings
-markdown: kramdown
-highlighter: rouge
-
-timezone: America/Chicago
-
-# Build settings
-include:
-  - _pages                  # all your pages can be put inside pages (except articles)
-exclude:
-  - _drafts
-  - README.md
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-
-github: [metadata]
-remote_theme: "mmistakes/minimal-mistakes@4.15.2"
-
-minimal_mistakes_skin: "air" #"dark", "air", "dirt"
-
-plugins:
-  - jekyll-archives
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-include-cache
-  - jemoji
-
-category_archive:
-  type: jekyll-archives
-  path: /categories/
-tag_archive:
-  type: jekyll-archives
-  path: /tags/
-
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive-taxonomy
-    tag: archive-taxonomy
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
-
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "UA-175306064-1"
-    anonymize_ip: false # default
-
-compress_html:
-  clippings: all
-  ignore:
-    envs:   # disable compression in dev environment
-
-social:
-  type: Person  # Person or Organization (defaults to Person)
-  name: Anand Khekale # If the user or organization name differs from the site's name
-  links:
-    - "https://twitter.com/anandkdev"
-    - "https://www.linkedin.com/in/anandkdev"
+      related: true
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: single
+      author_profile: true 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Books which shaped my career
+title: Books, which shaped my career
 subtitle: Books I like
 desc: List of books which I liked and helped me to be efficient and productive in software development. 
 permalink: /books/

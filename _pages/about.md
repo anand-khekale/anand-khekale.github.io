@@ -1,17 +1,20 @@
 ---
 layout: single
+classes: wide
 title: Something about me..
 subtitle: About me
 desc: About me.
+header:
+    og_image: /assets/images/logo.png
+    image_alt: "image"
 permalink: /about/
 ---
 [Download CV in PDF](/assets/Anand-Khekale-Resume.pdf)
 ## Summary
 Over 20 years of experience designing and developing applications on IBM i (AS/400, iSeries) system.
-Hands on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc.
-Excellent knowledge of JavaScript, NodeJS, Python.
-Instrumental in writing web-services/RESTful APIs.
-
+Hands-on knowledge of COBOL, RPG36, ILE RPG, RPG FREE format, CLLE, SQL, etc.
+Excellent knowledge of JavaScript, NodeJS, Python. Instrumental in writing web-services/RESTful APIs.
+{: style="text-align: justify;"}
 ## Experience 
 
 ### Sep 2013 - Current - G N Solutions Pvt. Ltd. - Senior Solutions Architect
