@@ -10,7 +10,7 @@ header:
 permalink: /about/
 ---
 
-[Download CV in PDF](assets/Anand_Khekale_CV_26.pdf)
+[Download CV in PDF](/assets/Anand_Khekale_CV_26.pdf)
 
 ## Professional Summary
 
